@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>files</key>
+	<dict>
+		<key>Resources/ContentViewController.nib</key>
+		<data>
+		V8P3V2ESR+gVRxzcTn8Gpx/6aws=
+		</data>
+		<key>Resources/MainMenu.nib</key>
+		<data>
+		NkU+A0Sut7yjjqv6THeMxn+9Uiw=
+		</data>
+		<key>Resources/Settings.nib</key>
+		<data>
+		9qPRTvxQZ1oLRj/ZmPmHVlQxNZU=
+		</data>
+		<key>Resources/Status 200.png</key>
+		<data>
+		fIDXppGI8a4ygR+gjrIU5P2Tric=
+		</data>
+		<key>Resources/Status 201.png</key>
+		<data>
+		qBJ66KrxnkwnP3zMTuOjFVyC/nk=
+		</data>
+		<key>Resources/Status 202.png</key>
+		<data>
+		vD2qqs5QTbET0k8cZo1LuiCRu9c=
+		</data>
+		<key>Resources/Status 203.png</key>
+		<data>
+		g8pY+o2AsEgGHCgAuz74Fa1ayZI=
+		</data>
+		<key>Resources/Status 204.png</key>
+		<data>
+		pmog12j00CWhPdXFzzjAYYeU2sI=
+		</data>
+		<key>Resources/Status 205.png</key>
+		<data>
+		YKg+PqtyhRqP+9mNrMK4EjiVBME=
+		</data>
+		<key>Resources/Status 206.png</key>
+		<data>
+		ZySHFQiwb2e6/rkTLtoHnOubIxE=
+		</data>
+		<key>Resources/Status 207.png</key>
+		<data>
+		ZGJaUihJfrB6mbk/+NmPtjq28og=
+		</data>
+		<key>Resources/Status 208.png</key>
+		<data>
+		+sUqOQOyVBPHMXW14O+otuloZnk=
+		</data>
+		<key>Resources/Status 209.png</key>
+		<data>
+		o/PHqE1uZzhqFaZdO2swSODz3UE=
+		</data>
+		<key>Resources/Status-Bad.png</key>
+		<data>
+		0dL3Fia+xgEkIH6C85z+ojs2AoI=
+		</data>
+		<key>Resources/Status-Down.png</key>
+		<data>
+		D4ZQjf/3UhBJzBeWRCfRaDiJBdM=
+		</data>
+		<key>Resources/Status-OK.png</key>
+		<data>
+		5snlO88ZaRbVcpNbMzQB9u33/po=
+		</data>
+		<key>Resources/Status.png</key>
+		<data>
+		oVR9SHnS9CTkF6x2Yqc3PaDcHqU=
+		</data>
+		<key>Resources/about.png</key>
+		<data>
+		1eCwQRCPINNtX5Z2TZMXM2aHL2A=
+		</data>
+		<key>Resources/close.png</key>
+		<data>
+		wSOyhV27/YHOZvjBK4jgCF9rnrI=
+		</data>
+		<key>Resources/download.png</key>
+		<data>
+		rABHaCsF1sJcmlP57xFXV1Kmuok=
+		</data>
+		<key>Resources/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			MiLKDDnrUKr4EmuvhS5VQwxHGK8=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/settingsIcon@2x.png</key>
+		<data>
+		diViyGnYYGRHNsHSt+Q5Kh5rIr8=
+		</data>
+		<key>Resources/trash.png</key>
+		<data>
+		4HM7hrf67UjtPgkzaooKD3GCIgM=
+		</data>
+		<key>Resources/xsync.icns</key>
+		<data>
+		f6F7GstBQjhus4GpXQ5qs+fmpzU=
+		</data>
+	</dict>
+	<key>rules</key>
+	<dict>
+		<key>^Resources/</key>
+		<true/>
+		<key>^Resources/.*\.lproj/</key>
+		<dict>
+			<key>optional</key>
+			<true/>
+			<key>weight</key>
+			<real>1000</real>
+		</dict>
+		<key>^Resources/.*\.lproj/locversion.plist$</key>
+		<dict>
+			<key>omit</key>
+			<true/>
+			<key>weight</key>
+			<real>1100</real>
+		</dict>
+		<key>^version.plist$</key>
+		<true/>
+	</dict>
+</dict>
+</plist>

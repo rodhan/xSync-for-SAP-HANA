@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ContentViewController closeButtonPressed:]:ContentViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "gotEvent:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "CDEventsCallback:CDEvents.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "event.is">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate applicationDidFinishLaunching:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[prefs valueForKey:@&quot;DevFolder&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate saveFile]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__25-[AppDelegate startWatch]_block_invoke:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "strOldFilename">
+            </PersistentString>
+            <PersistentString
+               value = "event.isDir">
+            </PersistentString>
+            <PersistentString
+               value = "event. isFinderInfoModified">
+            </PersistentString>
+            <PersistentString
+               value = "event. isRenamed">
+            </PersistentString>
+            <PersistentString
+               value = "event. isModified">
+            </PersistentString>
+            <PersistentString
+               value = "[event.URL absoluteString]">
+            </PersistentString>
+            <PersistentString
+               value = "event.URL relativeString">
+            </PersistentString>
+            <PersistentString
+               value = "event. isSymlink">
+            </PersistentString>
+            <PersistentString
+               value = "strFileName">
+            </PersistentString>
+            <PersistentString
+               value = "event.isKernelDropped">
+            </PersistentString>
+            <PersistentString
+               value = "event. didChangeOwner">
+            </PersistentString>
+            <PersistentString
+               value = "event. isXattrModified">
+            </PersistentString>
+            <PersistentString
+               value = "event. isFile">
+            </PersistentString>
+            <PersistentString
+               value = "event.isRemoved">
+            </PersistentString>
+            <PersistentString
+               value = "event. isCreated">
+            </PersistentString>
+            <PersistentString
+               value = "strEncodePackagePathFileName">
+            </PersistentString>
+            <PersistentString
+               value = "event. isKernelDropped">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate saveFile:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[prefs valueForKey:@&quot;Path&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__26-[AppDelegate deleteFile:]_block_invoke:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate startWatch]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "__24-[AppDelegate saveFile:]_block_invoke224:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "id test = [error.userInfo objectAtIndex:0];">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
