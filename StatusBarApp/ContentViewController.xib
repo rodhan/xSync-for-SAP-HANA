@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment version="1070" defaultVersion="1070" identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="4514"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5056"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ContentViewController">
@@ -72,6 +72,7 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <accessibility help="Open Settings"/>
                     <connections>
                         <action selector="showSettings:" target="-2" id="56"/>
                     </connections>
@@ -83,6 +84,7 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <accessibility help="Download this package from Server"/>
                     <connections>
                         <action selector="downloadFiles:" target="-2" id="61"/>
                     </connections>
@@ -94,6 +96,7 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <accessibility description="Opens Web IDE in Browser" help="Opens Web IDE in Browser"/>
                     <connections>
                         <action selector="openIDE:" target="-2" id="lYi-Ng-V0Z"/>
                     </connections>
@@ -101,10 +104,11 @@
                 <button toolTip="Open Editor in Browser" id="I9K-ci-pO6">
                     <rect key="frame" x="125" y="385" width="17" height="23"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="ide" imagePosition="only" alignment="center" imageScaling="proportionallyDown" inset="2" id="hkI-R3-ELU">
+                    <buttonCell key="cell" type="bevel" alternateTitle="Opens Web Editor in Browser" bezelStyle="rounded" image="ide" imagePosition="overlaps" alignment="center" imageScaling="proportionallyDown" inset="2" id="hkI-R3-ELU">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <accessibility help="Opens Web Editor in Browser"/>
                     <connections>
                         <action selector="openEditor:" target="-2" id="Ajh-aS-O4r"/>
                     </connections>
@@ -116,6 +120,7 @@
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
+                    <accessibility help="Clear log"/>
                     <connections>
                         <action selector="clearLog:" target="-2" id="53"/>
                     </connections>

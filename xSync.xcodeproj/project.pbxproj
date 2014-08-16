@@ -538,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatusBarApp/xSync-Prefix.pch";
 				INFOPLIST_FILE = "StatusBarApp/xSync-Info.plist";
@@ -550,6 +551,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StatusBarApp/xSync-Prefix.pch";
 				INFOPLIST_FILE = "StatusBarApp/xSync-Info.plist";

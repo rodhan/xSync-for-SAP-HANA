@@ -50,7 +50,7 @@
         [self startWatch];
     }
 
-    tokenTimer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(getHeadToken) userInfo:nil repeats:YES];
+    tokenTimer = [NSTimer scheduledTimerWithTimeInterval:300.0 target:self selector:@selector(getHeadToken) userInfo:nil repeats:YES];
     
 }
 
@@ -143,12 +143,14 @@
 
 
 - (NSMutableURLRequest *) buildRequest: (NSString *) params{
-    NSMutableURLRequest *request = [NSMutableURLRequest
-                                    requestWithURL:[NSURL
-                                                    URLWithString:[NSString
-                                                                   stringWithFormat:@"%@/sap/hana/xs/editor/server/repo/reposervice.xsjs%@",
-                                                                   [prefs valueForKey:@"Url"],
-                                                                   params]]];
+    NSString *strURL = @"";
+    if ([[prefs valueForKey:@"Version"] isEqualToString:@"SP07"]){
+        strURL = [NSString stringWithFormat:@"%@/sap/hana/xs/ide/editor/server/repo/reposervice.xsjs%@", [prefs valueForKey:@"Url"], params];
+    } else {
+        strURL = [NSString stringWithFormat:@"%@/sap/hana/xs/editor/server/repo/reposervice.xsjs%@", [prefs valueForKey:@"Url"], params];
+    }
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString: strURL]];
     
     
     NSMutableString *loginString = (NSMutableString*)[@"" stringByAppendingFormat:@"%@:%@",
@@ -270,7 +272,7 @@
             databuffer = nil;
             [self stopAnimating];
             [self setStatus:@"Status-OK"];
-            [contentViewController updateLog:[NSString stringWithFormat:@"Saved: %@/%@", [prefs valueForKey:@"Path"], filename ]];
+            [contentViewController updateLog:[NSString stringWithFormat:@"Synced: %@/%@", [prefs valueForKey:@"Path"], filename ]];
             [contentViewController updateSyncStatus];
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             databuffer = nil;
@@ -336,6 +338,7 @@
 
 - (void) downloadFilesFromPath: (NSString *) path{
     //Disable the file system watch to avoid doing cyclical copies
+    [self stopWatch];
     if ([strCSRFToken length] > 0) {
         NSMutableURLRequest *request = [self buildRequest: [NSString stringWithFormat: @"?path=%@", path]];
         [request setHTTPMethod:@"GET"];
@@ -370,6 +373,7 @@
     } else {
         [contentViewController updateLog: @"Unable to sync, server offline or not responding"];
     }
+    [self startWatch];
 }
 
 
@@ -391,7 +395,7 @@
     operation.outputStream = [NSOutputStream outputStreamToFileAtPath:diskPath append:NO];
     
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [contentViewController updateLog:[NSString stringWithFormat:@"Saved: %@", diskPath]];
+        [contentViewController updateLog:[NSString stringWithFormat:@"Downloaded: %@", diskPath]];
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         [contentViewController updateLog:[NSString stringWithFormat:@"Download error: %@", error]];
         NSLog(@"%@", error.description);

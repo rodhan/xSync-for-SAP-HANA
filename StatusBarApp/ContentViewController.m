@@ -51,7 +51,9 @@
 }
 
 - (IBAction) openEditor: (id) sender{
-    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@/sap/hana/xs/editor/",[prefs valueForKey:@"Url"]]]];
+    NSString *strURL = @"";
+    strURL = [NSString stringWithFormat:@"%@/sap/hana/xs/editor/",[prefs valueForKey:@"Url"]];
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString: strURL]];
 }
 
 

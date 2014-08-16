@@ -3,7 +3,12 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[ContentViewController closeButtonPressed:]:ContentViewController.m">
+         contextName = "__24-[AppDelegate saveFile:]_block_invoke224:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "id test = [error.userInfo objectAtIndex:0];">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "gotEvent:AppDelegate.m">
@@ -26,6 +31,14 @@
       </ContextState>
       <ContextState
          contextName = "-[AppDelegate saveFile]:AppDelegate.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[AppDelegate buildRequest:]:AppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[prefs valueForKey:@&quot;Version&quot;]">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "__25-[AppDelegate startWatch]_block_invoke:AppDelegate.m">
@@ -58,10 +71,10 @@
                value = "strFileName">
             </PersistentString>
             <PersistentString
-               value = "event.isKernelDropped">
+               value = "event. didChangeOwner">
             </PersistentString>
             <PersistentString
-               value = "event. didChangeOwner">
+               value = "event.isKernelDropped">
             </PersistentString>
             <PersistentString
                value = "event. isXattrModified">
@@ -95,15 +108,10 @@
          contextName = "__26-[AppDelegate deleteFile:]_block_invoke:AppDelegate.m">
       </ContextState>
       <ContextState
-         contextName = "-[AppDelegate startWatch]:AppDelegate.m">
+         contextName = "-[ContentViewController closeButtonPressed:]:ContentViewController.m">
       </ContextState>
       <ContextState
-         contextName = "__24-[AppDelegate saveFile:]_block_invoke224:AppDelegate.m">
-         <PersistentStrings>
-            <PersistentString
-               value = "id test = [error.userInfo objectAtIndex:0];">
-            </PersistentString>
-         </PersistentStrings>
+         contextName = "-[AppDelegate startWatch]:AppDelegate.m">
       </ContextState>
    </ContextStates>
 </VariablesViewState>

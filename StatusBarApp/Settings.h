@@ -20,6 +20,7 @@
 }
 
 - (IBAction) showFolders:(id)sender;
+@property (weak) IBOutlet NSComboBox *cboVersion;
 
 
 @end

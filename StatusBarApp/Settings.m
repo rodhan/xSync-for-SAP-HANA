@@ -12,6 +12,7 @@
 #include <CoreServices/CoreServices.h>
 #import "AppDelegate.h"
 
+
 @interface Settings ()
 
 @end
@@ -49,6 +50,7 @@
     [devfolder setStringValue:[prefs valueForKey:@"DevFolder"]];
     [password setStringValue:[prefs valueForKey:@"Password"]];
     [path setStringValue:[prefs valueForKey:@"Path"]];
+    [self.cboVersion selectItemWithObjectValue:[prefs valueForKey:@"Version"]];
     
     if ([prefs valueForKey:@"Username"]){
         [password becomeFirstResponder];
@@ -92,6 +94,7 @@
         } else {
             [prefs setObject:@"FALSE" forKey:@"IgnoreDeletes"];
         }
+        [prefs setObject:self.cboVersion.objectValueOfSelectedItem forKey:@"Version"];
     }
     @catch (NSException *exception) {
         NSLog(@"Error: %@", exception.description);
@@ -103,6 +106,7 @@
     [prefs synchronize];
     
     AppDelegate *theAppDelegate = (AppDelegate*) [NSApplication sharedApplication].delegate;
+    [theAppDelegate getHeadToken];
     [theAppDelegate startWatch];
 }
 
