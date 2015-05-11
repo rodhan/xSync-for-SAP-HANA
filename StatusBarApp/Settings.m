@@ -65,6 +65,12 @@
     } else {
         [ignoredeletes setState:0];
     }
+    
+    if ([[prefs valueForKey:@"MonitorChanges"]  isEqual: @"TRUE"]){
+        [monitorChanges setState:1];
+    } else {
+        [monitorChanges setState:0];
+    }
 }
 
 
@@ -93,6 +99,11 @@
             [prefs setObject:@"TRUE" forKey:@"IgnoreDeletes"];
         } else {
             [prefs setObject:@"FALSE" forKey:@"IgnoreDeletes"];
+        }
+        if (monitorChanges.state == 1){
+            [prefs setObject:@"TRUE" forKey:@"MonitorChanges"];
+        } else {
+            [prefs setObject:@"FALSE" forKey:@"MonitorChanges"];
         }
         [prefs setObject:self.cboVersion.objectValueOfSelectedItem forKey:@"Version"];
     }

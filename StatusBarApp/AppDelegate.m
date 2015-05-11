@@ -56,6 +56,12 @@
 
 
 - (void) startWatch{
+    if (![[prefs valueForKey:@"MonitorChanges"] isEqual: @"TRUE"]){
+        return;
+    }
+    
+    return;
+    
     
     if ([[prefs valueForKey:@"DevFolder"] length] > 0 && [[prefs valueForKey:@"Url"] length] > 0){
         NSArray *urls = [NSArray arrayWithObject:[NSURL URLWithString:[prefs valueForKey:@"DevFolder"]]];

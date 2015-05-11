@@ -16,6 +16,7 @@
     IBOutlet NSTextField *path;
     IBOutlet NSTextField *version;
     IBOutlet NSButton *ignoredeletes;
+    IBOutlet NSButton *monitorChanges;
     NSUserDefaults *prefs;
 }
 
